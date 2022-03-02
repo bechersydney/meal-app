@@ -8,7 +8,14 @@ class MealItem extends StatelessWidget {
   const MealItem(this.meal, {Key? key}) : super(key: key);
 
   void _selectMeal(BuildContext context) {
-    Navigator.of(context).pushNamed(MealDetail.routeName, arguments: meal.id);
+    Navigator.of(context)
+        .pushNamed(
+      MealDetail.routeName,
+      arguments: meal.id,
+    )
+        .then((result) {
+      print(result);
+    });
   }
 
   String get _complexityValue {
