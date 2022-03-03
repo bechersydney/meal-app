@@ -90,7 +90,7 @@ const DUMMY_MEALS = [
     isGlutenFree: false,
     isVegan: true,
     isVegetarian: true,
-    isLactoseFree: true,
+    isLactoseFree: true, 
   ),
   Meal(
     id: 'm2',
